@@ -13,12 +13,9 @@ posiciones = [7, 21, 40, 71, 94]
 
 print(" Secuencia de Fibonacci Recursiva ")
 for n in posiciones:
-    # Para n=71 y n=94, el cálculo recursivo puro tardará mucho o causará 
-    # un error de límite de recursión si no está configurado correctamente.
-    # Por eficiencia, usaremos un enfoque iterativo para n > 40.
-
-    if n > 40:
-        # Usamos una función iterativa para calcular números grandes 
+    # Para n=71 y n=94, el cálculo recursivo puro tardará mucho 
+    # Usamos una función iterativa para calcular números grandes 
+    if n > 40:  
         a, b = 0, 1
         for _ in range(2, n + 1):
             a, b = b, a + b
